@@ -1,0 +1,35 @@
+<h1>Profiles</h1>
+<h2>We are fictional, but fiery</h2>
+
+<div class="profiles">
+  <% @profiles.each do |profile| %>
+
+    <div class="row">
+
+        <h3><%= profile.name %></h3>
+
+        <p><%= profile.age %></p>
+
+        <p><%= profile.occupation %></p>
+
+        <p><%= profile.family %></p>
+
+        <p><%= profile.friends %></p>
+
+        <p><%= profile.favourites %></p>
+
+        <p><%= profile.hobbies %></p>
+
+        <form action="/profiles/<%= profile.id %>/edit" method="update">
+          <button>Edit</button>
+        </form>
+
+        <form action="/profiles/<%= profile.id %>/delete" method="delete">
+          <button>Delete</button>
+        </form>
+
+      </div>
+
+  <% end %>
+
+</div>

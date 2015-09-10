@@ -1,0 +1,26 @@
+<h2>Edit Profile</h2>
+
+<form action='/profiles/<%= "#{@profile.id}" %>' method="update">
+  <label for="profile[name]">Name:</label>
+  <input name="profile[name]" value='<%= "#{@profile.name}" %>'>
+
+  <label for="profile[age]">Age:</label>
+  <input name="profile[age]" value='<%= "#{@profile.age}" %>'>
+
+  <label for="profile[occupation]">Occupation:</label>
+  <input name="profile[occupation]" value='<%= "#{@profile.occupation}" %>'>
+
+  <label for="profile[family]">Family:</label>
+  <input name="profile[family]" value='<%= "#{@profile.family}" %>'>
+
+  <label for="profile[friends]">Friends:</label>
+  <input name="profile[friends]" value='<%= "#{@profile.friends}" %>'>
+
+  <label for="profile[favourites]">Favourites:</label>
+  <input name="profile[favourites]" value='<%= "#{@profile.favourites}" %>'>
+
+  <label for="profile[hobbies]">Hobbies:</label>
+  <input name="profile[hobbies]" value='<%= "#{@profile.hobbies}" %>'>
+
+  <input type="submit" class="button" value="Submit">
+</form>
